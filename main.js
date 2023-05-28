@@ -1,11 +1,5 @@
 $( document ).ready(function() {
-    
-
-
-
 });
-
-
 let text = document.getElementById("text")
 let play = document.getElementById("play")
 let Puse = document.getElementById("pause")
@@ -26,19 +20,13 @@ function Tovoice(txt){
     voice.rate = speed.value || 1
     voice.addEventListener('end',()=>{
         text.disabled = false
-       
-
     })
     text.disabled = true
-    
-    
     speechSynthesis.speak(voice)
 }
-
 function pauseText(){
     if(speechSynthesis.speaking)speechSynthesis.pause()
 }
-
 function stopText(){
     speechSynthesis.resume()
     speechSynthesis.cancel()

@@ -1,36 +1,49 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>I speak</title>
-    <link rel="stylesheet" href="./dist/css/bootstrap.min.css">
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
+    <link rel="stylesheet" href="./dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
     <div class="containor">
-
-        <div class="row">
-            <div class="col-md-1"></div>
-            <div class="col-md-8 ">
-                <br>
-                <br>
-                <h3>Text to speech</h3>
-                <textarea id="text" class="col-md-12" name="" id="" cols="30" rows="10"></textarea>
-                <label for="Speed">speed</label>
-                <input type="number" name="speed" id="speed" min=".5" max="3" step=".5" value="1">
-                <button class=" btn btn-primary pl-5 pr-5" id="play">play</button>
-                <button class="btn btn-secondary pl-5 pr-5" id="pause">pause</button>
-                <button class="btn btn-danger pl-5 pr-5" id="stop">stop</button>
-            </div>
-            <div class="col-md-2"></div>
+      <div class="row">
+        <div class="col-md-1"></div>
+        <div class="col-md-8">
+          <br />
+          <br />
+          <h3>Text to speech</h3>
+          <textarea
+            id="text"
+            class="col-md-12"
+            name=""
+            id=""
+            cols="30"
+            rows="10"
+          ></textarea>
+          <label for="Speed">speed</label>
+          <input
+            type="number"
+            name="speed"
+            id="speed"
+            min=".5"
+            max="3"
+            step=".5"
+            value="1"
+          />
+          <button class="btn btn-primary pl-5 pr-5" id="play">play</button>
+          <button class="btn btn-secondary pl-5 pr-5" id="pause">pause</button>
+          <button class="btn btn-danger pl-5 pr-5" id="stop">stop</button> - By
+          Abmoallim
         </div>
+        <div class="col-md-2"></div>
+      </div>
     </div>
-
-    
 
     <script src="./jquery.js"></script>
     <script src="./main.js" defer></script>
-</body>
+  </body>
 </html>
